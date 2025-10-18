@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Local Weather & Holiday Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <head>
+        <span class="logo">Namibian Dashboard</span>
+        <nav>
+            <a href="index.html">Dashboard</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+        
+    </head>
+
+   <div class="container">
+        <h1>Welcome to Your Local Dashboard</h1>
+
+        <div class="dashboard-widgets">
+          
+            <div class="widget">
+                <h2>Local Time</h2>
+                <p id="clock">--:--:--</p>
+            </div>
+
+          
+            <div class="widget">
+                <h2>Weather</h2>
+                <img id="weather-icon" src="images/weather.jpg" alt="Weather Icon">
+                <p id="weather-temp">--°C</p>
+                <p id="weather-desc">Loading...</p>
+            </div>
+
+         
+            <div class="widget">
+                <h2>Namibian Holidays</h2>
+                <ul id="holidays">
+                    <li>Loading holidays...</li>
+                </ul>
+            </div>
+
+          
+            <div class="widget">
+                <h2>Countdown to Weekend</h2>
+                <p id="countdown">-- days --:--:--</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        &copy; 2025 Namibia Dashboard
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
