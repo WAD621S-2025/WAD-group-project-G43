@@ -1,0 +1,161 @@
+/* Reset some default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Make footer stick to bottom */
+html, body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: #f4f4f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* ===== Header & Navigation ===== */
+header {
+    background-color: #ba7bc0;
+    color: #fff;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* ===== Logo Styling ===== */
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.logo img {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #fff;
+}
+
+/* ===== Navigation ===== */
+nav {
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #1abc9c;
+}
+
+/* ===== Main Container ===== */
+.container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 20px;
+    flex: 1; /* allows container to grow and push footer down */
+}
+
+/* ===== Dashboard Widgets ===== */
+.dashboard-widgets {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.widget {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    flex: 1 1 250px;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.widget:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.widget img {
+    width: 80px;
+    height: 80px;
+}
+
+/* ===== Footer ===== */
+footer {
+    background-color: #ba7bc0;
+    color: #fff;
+    padding: 15px 20px;
+    text-align: center;
+    margin-top: auto; 
+}
+
+/* ===== Footer Social Icons (for contact page) ===== */
+footer .socials {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+footer .socials span {
+    margin-right: 10px;
+    font-weight: bold;
+    color: #fff;
+}
+
+footer .socials a img {
+    width: 30px;
+    height: 30px;
+    object-fit: cover;
+    transition: transform 0.2s;
+}
+
+footer .socials a img:hover {
+    transform: scale(1.2);
+}
+
+/* ===== Responsive Design ===== */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .logo {
+        justify-content: center;
+        margin-bottom: 10px;
+    }
+
+    nav {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .dashboard-widgets {
+        flex-direction: column;
+        align-items: center;
+    }
+}

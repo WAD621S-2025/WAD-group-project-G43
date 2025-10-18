@@ -7,17 +7,22 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <head>
-        <span class="logo">Namibian Dashboard</span>
+  
+    <header>
+        <div class="logo">
+            
+            <img src="images/weather.jpg" alt="Namibia Dashboard Logo">
+            <span>Namibian Dashboard</span>
+        </div>
+
         <nav>
-            <a href="index.html">Dashboard</a>
+            <a href="index.html" aria-current="page">Dashboard</a>
             <a href="about.html">About</a>
             <a href="contact.html">Contact</a>
         </nav>
-        
-    </head>
+    </header>
 
-   <div class="container">
+    <div class="container">
         <h1>Welcome to Your Local Dashboard</h1>
 
         <div class="dashboard-widgets">
@@ -27,15 +32,13 @@
                 <p id="clock">--:--:--</p>
             </div>
 
-          
             <div class="widget">
                 <h2>Weather</h2>
-                <img id="weather-icon" src="images/weather.jpg" alt="Weather Icon">
+                <img id="weather-icon" src="images/images.jpeg" alt="Weather Icon">
                 <p id="weather-temp">--°C</p>
                 <p id="weather-desc">Loading...</p>
             </div>
 
-         
             <div class="widget">
                 <h2>Namibian Holidays</h2>
                 <ul id="holidays">
@@ -43,7 +46,6 @@
                 </ul>
             </div>
 
-          
             <div class="widget">
                 <h2>Countdown to Weekend</h2>
                 <p id="countdown">-- days --:--:--</p>
@@ -58,5 +60,3 @@
     <script src="script.js"></script>
 </body>
 </html>
-
-
