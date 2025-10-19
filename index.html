@@ -8,9 +8,18 @@
 </head>
 <body>
   
+  
+    <video autoplay muted loop id="background-video">
+        <source src="images/back.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+   
+    <div id="overlay"></div>
+
+ 
     <header>
         <div class="logo">
-            
             <img src="images/weather.jpg" alt="Namibia Dashboard Logo">
             <span>Namibian Dashboard</span>
         </div>
@@ -22,13 +31,15 @@
         </nav>
     </header>
 
+ 
     <div class="container">
-        <h1>Welcome to Your Local Dashboard</h1>
+        <h1 style="color: white;">Welcome to Your Local Dashboard</h1>
+
 
         <div class="dashboard-widgets">
-          
             <div class="widget">
                 <h2>Local Time</h2>
+                <img src="images/time3.jpeg" alt="Clock Icon" class="widget-icon">
                 <p id="clock">--:--:--</p>
             </div>
 
@@ -53,6 +64,7 @@
         </div>
     </div>
 
+ 
     <footer>
         &copy; 2025 Namibia Dashboard
     </footer>

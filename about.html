@@ -7,30 +7,47 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!-- Header -->
     <header>
-        <span class="logo">Namibia Dashboard</span>
+        <div class="logo">
+            <img src="images/weather.jpg" alt="Namibia Dashboard Logo">
+            <span>Namibia Dashboard</span>
+        </div>
         <nav>
             <a href="index.html">Dashboard</a>
-            <a href="about.html">About</a>
+            <a href="about.html" aria-current="page">About</a>
             <a href="contact.html">Contact</a>
         </nav>
     </header>
 
+    <!-- Main container -->
     <div class="container">
         <h1>About The Website</h1>
-        <p>This Local Weather & Holiday Dashboard was developed to help Namibian residents plan their day efficiently.</p>
-        <p>Features include:</p>
-        <ul>
-            <li>Real-time local time display</li>
-            <li>Live weather information via API</li>
-            <li>Namibian public holidays from JSON</li>
-            <li>Countdown to weekend widget</li>
-        </ul>
-        <p>Technologies used: HTML5, CSS3, JavaScript, Tailwind CSS, OpenWeather API, JSON handling.</p>
+
+        <div class="hover-box">
+            <h2>Purpose</h2>
+            <p>This Local Weather & Holiday Dashboard was developed to help Namibian residents plan their day efficiently.</p>
+        </div>
+
+        <div class="hover-box">
+            <h2>Features</h2>
+            <ul>
+                <li>Real-time local time display</li>
+                <li>Live weather information via API</li>
+                <li>Namibian public holidays from JSON</li>
+                <li>Countdown to weekend widget</li>
+            </ul>
+        </div>
+
+        <div class="hover-box">
+            <h2>Technologies Used</h2>
+            <p>HTML5, CSS3, JavaScript, Tailwind CSS, OpenWeather API, JSON handling.</p>
+        </div>
     </div>
 
+    <!-- Footer -->
     <footer>
-        &copy; 2025 Namibia Dashboard
+        <p>&copy; 2025 Namibia Dashboard</p>
     </footer>
 </body>
 </html>
